@@ -5,11 +5,20 @@ import (
 	"time"
 )
 
+// struct embeding
+
+type customer struct {
+	name  string
+	phone string
+}
+
+// composition, inheritance, code reusablity
 type order struct {
 	id          string
 	amount      float32
 	status      string
 	createdTime time.Time
+	customer
 }
 
 // constructor
@@ -34,12 +43,16 @@ func (o order) getAmount() float32 {
 }
 func main() {
 	// instantiate
-	// myOrder := order{
-	// 	id:     "1",
-	// 	amount: 30.4,
-	// 	status: "pending",
-	// }
-	myOrder := newOrder("1", 50, "accepted")
+	myOrder := order{
+		id:     "1",
+		amount: 30.4,
+		status: "pending",
+		customer: customer{
+			name:  "Ashu",
+			phone: "9129189319",
+		},
+	}
+	// myOrder := newOrder("1", 50, "accepted")
 
 	myOrder2 := order{
 		id:     "2",
@@ -57,7 +70,7 @@ func main() {
 	// myOrder.createdTime = time.Now()
 	// myOrder.changeStatus("paid")
 	fmt.Println(myOrder)
-	fmt.Printf("%+v\n", *myOrder)
+	// fmt.Printf("%+v\n", *myOrder)
 	fmt.Println(myOrder2)
 	// fmt.Println(myOrder.getAmount())
 }
