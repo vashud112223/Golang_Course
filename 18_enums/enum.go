@@ -16,5 +16,5 @@ func changeStatus(status OrderStatus) {
 }
 
 func main() {
-	changeStatus(Confirmed)
+	changeStatus(Delivered)
 }

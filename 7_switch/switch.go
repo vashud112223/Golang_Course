@@ -44,4 +44,18 @@ func main() {
 	}
 	whoAmI(true)
 
+	product := "WCE"
+
+	switch product {
+	case "Tractor":
+		fmt.Println("product is Tractor")
+	case "WC":
+		fmt.Println("product is WC")
+	case "HL":
+		fmt.Println("product is HL")
+	case "Nano Loan":
+		fmt.Println("product is Nano Loan")
+	default:
+		fmt.Println(" no product found")
+	}
 }
