@@ -16,6 +16,21 @@ import "fmt"
 // 	}
 // }
 
+// func findDuplicates(nums []int) []int {
+// 	res := make([]int, 0, len(nums))
+// 	m := make(map[int]int)
+// 	for _, num := range nums {
+// 		m[num]++
+// 	}
+
+// 	for key, val := range m {
+// 		if val > 1 {
+// 			res = append(res, key)
+// 		}
+// 	}
+// 	return res
+// }
+
 func findDuplicates(nums []int) []int {
 	res := make([]int, 0, len(nums))
 	m := make(map[int]int)

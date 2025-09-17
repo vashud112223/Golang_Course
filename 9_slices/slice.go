@@ -13,9 +13,9 @@ func main() {
 	// fmt.Println(nums == nil)
 	// fmt.Println(len(nums))
 
-	// var nums = make([]int, 1, 5)
-	//   nums:= []int{}
-	// fmt.Println(nums)
+	var nums = make([]int, 1, 5)
+	// nums := []int{}
+	fmt.Println(nums)
 	// capacity-> maximum number of elements can fit
 	// fmt.Println(cap(nums))
 	// nums[0] = 4
@@ -49,7 +49,7 @@ func main() {
 	// fmt.Println(slices.Equal(nums, nums2))
 
 	// 2d slices
-	var nums = [][]int{{1, 2, 3}, {4, 5, 6}}
-	fmt.Println(nums)
+	// var nums = [][]int{{1, 2, 3}, {4, 5, 6}}
+	// fmt.Println(nums)
 
 }
